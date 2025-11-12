@@ -12,11 +12,11 @@
 
 # Calculator.add(5, 6)
 
-# class Hero:
-#     def __init__(self, name, money, inventory):
-#         self.name = name
-#         self.money = money
-#         self.inventory = inventory
+class Hero:
+    def __init__(self, name, money, inventory):
+        self.name = name
+        self.money = money
+        self.inventory = inventory
 
 #     def buy(self, item):
 #         self.inventory.append(item)
@@ -35,3 +35,7 @@ class BankAccount:
 
     def show_balance(self):
         print(f"{self.owner} has ${self.__balance}")
+
+class hero:
+    def __init__(name,inventory,money):
+        
