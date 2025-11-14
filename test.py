@@ -44,4 +44,3 @@ class Hero:
     def buy(self,inventory):
         self.inventory=inventory
         print(inventory)
-Hero.buy("Banana")
