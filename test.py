@@ -36,6 +36,7 @@ class BankAccount:
     def show_balance(self):
         print(f"{self.owner} has ${self.__balance}")
 
+
 class Hero:
     def __init__(self, name, inventory , money ):
         self.name=name
@@ -44,3 +45,4 @@ class Hero:
     def buy(self,inventory):
         self.inventory=inventory
         print(inventory)
+marvel=Hero(named, , 1)
