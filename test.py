@@ -25,24 +25,23 @@ class Hero:
 # Jillian.buy({"title": "Sword", "atk": 34})
 # print(Jillian.__dict__)
 
-class BankAccount:
-    def __init__(self, owner, balance):
-        self.owner = owner
-        self.__balance = balance  # double underscore means "private"
+# class BankAccount:
+#     def __init__(self, owner, balance):
+#         self.owner = owner
+#         self.__balance = balance  # double underscore means "private"
 
-    def deposit(self, amount):
-        self.__balance += amount
+#     def deposit(self, amount):
+#         self.__balance += amount
 
-    def show_balance(self):
-        print(f"{self.owner} has ${self.__balance}")
+#     def show_balance(self):
+#         print(f"{self.owner} has ${self.__balance}")
 
 
 class Hero:
-    def __init__(self, name, inventory , money ):
+    def _init_(self, name , money ):
         self.name=name
-        self.inventory=inventory
         self.money=money
     def buy(self,inventory):
         self.inventory=inventory
-        print(inventory)
-marvel=Hero(named, , 1)
+    def(start)
+
