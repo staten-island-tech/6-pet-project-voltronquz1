@@ -37,11 +37,20 @@ class Hero:
 #         print(f"{self.owner} has ${self.__balance}")
 
 
-class Hero:
-    def _init_(self, name , money ):
-        self.name=name
-        self.money=money
-    def buy(self,inventory):
-        self.inventory=inventory
-    def(start)
-
+# class Hero:
+#     def _init_(self, name , money ):
+#         self.name=name
+#         self.money=money
+#     def buy(self,inventory):
+#         self.inventory=inventory
+def isvalid(email,password):
+    if " " in email():
+        return"There should be no space"
+    if "@" not in email:
+        return "Not valid email"
+    character=len(password)
+    if character < 8:
+        return"You need atleast 8 characters for your"
+    if password.isupper:
+        return "You need a upper case"
+print(isvalid("mangomustard@gmail.com","676141tungtung"))
