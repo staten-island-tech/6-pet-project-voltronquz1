@@ -47,11 +47,7 @@ class Hero:
     def buy(self,inventory,shop):
         self.inventory=inventory
         self.shop=shop
-    shop={
         
-    }
-
-
 
 # def isvalid(email,password):
 #     if " " in email:
