@@ -47,7 +47,9 @@ class Hero:
     def buy(self,inventory,shop):
         self.inventory=inventory
         self.shop=shop
-    
+    shop={
+        
+    }
 
 
 
