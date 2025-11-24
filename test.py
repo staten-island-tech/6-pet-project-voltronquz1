@@ -36,7 +36,7 @@
 #     def show_balance(self):
 #         print(f"{self.owner} has ${self.__balance}")
 
-
+import random
 class Hero:
     def _init_(pet, hunger , happiness,clean,thirst,sleepyness):
         pet.hunger=hunger
@@ -44,11 +44,28 @@ class Hero:
         pet.clean=clean
         pet.thirst=thirst
         pet.sleepyness=sleepyness
-    def buy(self,inventory,shop):
-        self.inventory=inventory
-        self.shop=shop
+    def person(self,money):
+        self.money=money
+    money=100
+    hunger=100
+    thirst=100
+    clean=100
+    sleep=100
+    happiness=100
+    hungerloss=random.randint(5,10)
+    happinessloss=random.randint(5,10)
+    dirtyness=random.randint(5,10)
+    thirstness=random.randint(5,10)
+    sleepyness=random.randint(5,10)
+    print("What do you want to do " \
+    "Sleep" \
+    "Play" \
+    "Thirst" \
+    "clean" \
+    "feed" \
+    "hydrate")
+    input(":")
         
-
 # def isvalid(email,password):
 #     if " " in email:
 #         return"There should be no space"
