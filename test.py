@@ -46,6 +46,7 @@ class Hero:
         pet.sleepyness=sleepyness
     def person(self,money):
         self.money=money
+    counter=0
     money=100
     hunger=100
     thirst=100
@@ -64,9 +65,25 @@ class Hero:
      "clean" \
      "feed" \
      "hydrate")
-    input(":")
+    action=input(":")
+    for i in counter:
+        if action:
+            counter+=1
+            if counter ==3:
+                counter=0
+    
+    if "Sleep" or "sleep" in action:
+        sleep=sleep+sleepyness
+    if "Feed" or "feed" in action:
+        hunger=hunger+hungerloss
+    if "hydrate" or "hydrate":
+        thirst=thirstness+thirst
+    if "play" or "Play":
+        happines=happiness+happinessloss 
+    if "clean" or "Clean":
+        clean=dirtyness+clean
+    
 
-        
 # def isvalid(email,password):
 #     if " " in email:
 #         return"There should be no space"
