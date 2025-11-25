@@ -59,12 +59,13 @@ class Hero:
     sleepyness=random.randint(5,10)
     print("What do you want to do " \
     "Sleep" \
-    "Play" \
-    "Thirst" \
-    "clean" \
-    "feed" \
-    "hydrate")
+     "Play" \
+     "Thirst" \
+     "clean" \
+     "feed" \
+     "hydrate")
     input(":")
+
         
 # def isvalid(email,password):
 #     if " " in email:
