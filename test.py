@@ -83,5 +83,4 @@ class Hero:
         happines=happiness+happinessloss 
     if "clean" or "Clean":
         clean=dirtyness+clean
-
-
+    
