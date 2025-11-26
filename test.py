@@ -58,19 +58,20 @@ class Hero:
     dirtyness=random.randint(5,10)
     thirstness=random.randint(5,10)
     sleepyness=random.randint(5,10)
-    print("What do you want to do " \
-    "Sleep" \
-     "Play" \
-     "Thirst" \
-     "clean" \
-     "feed" \
-     "hydrate")
+    options=[
+        "Play:$10",
+        "Feed:$10",
+        "Hydrate:$10",
+        "Clean:$10",
+        "Work:$0",
+    ]
+    print(options)
     action=input(":")
-    for i in counter:
-        if action:
-            counter+=1
-            if counter ==3:
-                counter=0
+    # for i in counter:
+    #     if action:
+    #         counter+=1
+    #         if counter ==3:
+    #             counter=0
     
     if "Sleep" or "sleep" in action:
         sleep=sleep+sleepyness
@@ -82,31 +83,5 @@ class Hero:
         happines=happiness+happinessloss 
     if "clean" or "Clean":
         clean=dirtyness+clean
-    
 
-# def isvalid(email,password):
-#     if " " in email:
-#         return"There should be no space"
-#     if "@" not in email:
-#         return "Not valid email"
-#     character=len(password)
-#     if character < 8:
-#         return"You need atleast 8 characters for your"
-#     upper=0
-#     lower=0
-#     for i in password:
-#         if i.upper():
-#             upper+=1
-#         if upper == 0:
-#             return "You need a upper case letter"
-#         if i.lower():
-#             lower+=1
-#         if lower==0:
-#             return "You need a lower case letter"
-
-
-    
-
-
-# print(isvalid("Something1234@gmail.com","12355abc"))
 
