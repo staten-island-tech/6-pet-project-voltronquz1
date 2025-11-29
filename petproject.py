@@ -20,15 +20,16 @@ class Hero:
     dirtyness=random.randint(5,10)
     thirstness=random.randint(5,10)
     sleepyness=random.randint(5,10)
-    options=[
-        "Play:$10",
-        "Feed:$10",
-        "Hydrate:$10",
-        "Clean:$10",
-        "Work:$0",
-    ]
-    print(options)
-    action=input(":")
+    for i in range():
+        options=[
+            "Play:$10",
+            "Feed:$10",
+            "Hydrate:$10",
+            "Clean:$10",
+            "Work:$0",
+        ]
+        print(options)
+        action=input(":")
     # for i in counter:
     #     if action:
     #         counter+=1
