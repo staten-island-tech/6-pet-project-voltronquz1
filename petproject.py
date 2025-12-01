@@ -20,22 +20,20 @@ class Hero:
     dirtyness=random.randint(5,10)
     thirstness=random.randint(5,10)
     sleepyness=random.randint(5,10)
-    for i in range():
-        options=[
-            "Play:$10",
-            "Feed:$10",
-            "Hydrate:$10",
-            "Clean:$10",
-            "Work:$0",
-        ]
-        print(options)
-        action=input(":")
+    options=[
+        "Play:$10",
+        "Feed:$10",
+        "Hydrate:$10",
+        "Clean:$10",
+        "Work:$0",
+    ]
+    print(options)
+    action=input(":")
     # for i in counter:
     #     if action:
     #         counter+=1
     #         if counter ==3:
     #             counter=0
-    
     if "Sleep" or "sleep" in action:
         sleep=sleep+sleepyness
     if "Feed" or "feed" in action:
@@ -43,4 +41,5 @@ class Hero:
     if "hydrate" or "hydrate":
         thirst=thirstness+thirst
     if "play" or "Play":
-        happines=happiness 
+        play=play+happiness
+    
