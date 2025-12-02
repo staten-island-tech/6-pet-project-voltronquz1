@@ -35,11 +35,16 @@ class Hero:
     #         if counter ==3:
     #             counter=0
     if "Sleep" or "sleep" in action:
-        sleep=sleep+sleepyness
+        sleep=sleep+5
     if "Feed" or "feed" in action:
-        hunger=hunger+hungerloss
+        hunger=hunger+5
     if "hydrate" or "hydrate":
-        thirst=thirstness+thirst
+        thirst=5+thirst
+    if "clean" or "Clean":
+        clean=clean+5
+    if "work" or "Work":
+        money=money+35
     if "play" or "Play":
-        play=play+happiness
+            
+
     
