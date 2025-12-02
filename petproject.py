@@ -46,5 +46,6 @@ class Hero:
         money=money+35
     if "play" or "Play":
         happiness=happiness+5
+    
 
     
