@@ -42,8 +42,13 @@ class Hero:
         thirst=5+thirst
     if "clean":
         clean=clean+5
-    if "work" or "Work":
+    if "work" :
         money=money+35
-    if "play" or "Play":
+    if "play":
         happiness=happiness+5
-    
+    action=0
+    while ap==3:
+        action+=1
+        ap-1
+        ap=3
+        
