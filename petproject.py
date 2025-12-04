@@ -6,7 +6,7 @@ class Hero:
         pet.clean=clean
         pet.thirst=thirst
         pet.sleepyness=sleepyness
-    def alive(pet, hun):
+    def alive(pet):
         pet.hunger > 0
         pet.happiness >0
         pet.clean > 0
