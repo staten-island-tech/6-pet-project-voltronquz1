@@ -6,9 +6,21 @@ class Hero:
         pet.clean=clean
         pet.thirst=thirst
         pet.sleepyness=sleepyness
+    def alive(pet, hun):
+        pet.hunger > 0
+        pet.happiness >0
+        pet.clean > 0
+        pet.thirst > 0
+        pet.sleep > 0
+    def statcap(pet):
+        pet.hunger 
+        pet.happiness 
+        pet.clean 
+        pet.thirst
+        pet.sleep 
+        
     def person(self,money):
         self.money=money
-    counter=0
     money=100
     hunger=100
     thirst=100
@@ -51,4 +63,3 @@ class Hero:
         action+=1
         ap-1
         ap=3
-        
