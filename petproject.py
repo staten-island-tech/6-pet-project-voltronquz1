@@ -13,11 +13,11 @@ class Hero:
         pet.thirst > 0
         pet.sleep > 0
     def statcap(pet):
-        pet.hunger 
-        pet.happiness 
-        pet.clean 
-        pet.thirst
-        pet.sleep 
+        pet.hunger=max(0,min(100,pet.hunger))
+        pet.happiness=max(0,min(100,pet.happiness))
+        pet.clean =max(0,min(100,pet.clean))
+        pet.thirst=max(0,min(100,pet.thirst))
+        pet.sleep =max(0,min(100,pet.sleep))
         
     def person(self,money):
         self.money=money
