@@ -85,3 +85,8 @@ class Hero:
             hunger+10
         if hunger > money:
             print("need more money")
+    if "sleep" in action:
+        if play < money:
+            play+5
+        if play > money:
+            print("need more money")
