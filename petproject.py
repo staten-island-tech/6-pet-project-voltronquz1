@@ -53,25 +53,35 @@ class Hero:
     #         counter+=1
     #         if counter ==3:
     #             counter=0
-    if "sleep" in action:
-        sleep=sleep+5
-    if "feed" in action:
-        hunger=hunger+5
-    if "hydrate":
-        thirst=5+thirst
-    if "clean":
-        clean=clean+5
-    if "work" :
-        money=money+35
-    if "play":
-        happiness=happiness+5
     action=0
     while ap==3:
         action+=1
         ap-1
         ap=3
     if "sleep" in action:
-        if money <= sleep:
-            return 
-        if money >= sleep:
-            sleep=sleep+5
+        if money < sleep:
+            print( "Need more money")
+        if money > sleep:
+            sleep+5
+    if "play" in action:
+        if play < money:
+            play+5
+        if play > money:
+            print("need more money")
+    if "hydrate" in action:
+        if hydrate < money:
+            play+5
+        if hydrate > money:
+            print("need more money")
+    if "clean" in action:
+        if clean < money:
+            play+5
+        if clean > money:
+            print("need more money")
+    if "work" in action:
+        money+35
+    if "feed" in action:
+        if hunger < money:
+            hunger+10
+        if hunger > money:
+            print("need more money")
