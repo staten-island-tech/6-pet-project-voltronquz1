@@ -40,24 +40,28 @@ class Hero:
         "Work:$0",
         "sleep:$10"
     ]
-    play=10
-    feed=10
-    hydrate=10
-    clean=10
-    work=0
-    sleep=10
-    print(options)
-    action=input(":").lower()
-    # for i in counter:
-    #     if action:
-    #         counter+=1
-    #         if counter ==3:
-    #             counter=0
-    action=0
-    while ap==3:
+
+    while ap > 0:
+        action=0
         action+=1
         ap-1
         ap=3
+        options=[
+        "Play:$10",
+        "Feed:$10",
+        "Hydrate:$10",
+        "Clean:$10",
+        "Work:$0",
+        "sleep:$10"
+    ]
+        play=10
+        feed=10
+        hydrate=10
+        clean=10
+        work=0
+        sleep=10
+        print(options)
+        action=input(":").lower()
     if "sleep" in action:
         if money < sleep:
             print( "Need more money")
@@ -90,3 +94,4 @@ class Hero:
             play+5
         if play > money:
             print("need more money")
+            
