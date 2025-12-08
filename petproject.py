@@ -40,10 +40,8 @@ class Hero:
         "Work:$0",
         "sleep:$10"
     ]
-
     while ap > 0:
         action=0
-        action+=1
         ap-1
         ap=3
         options=[
@@ -62,36 +60,42 @@ class Hero:
         sleep=10
         print(options)
         action=input(":").lower()
-    if "sleep" in action:
-        if money < sleep:
-            print( "Need more money")
-        if money > sleep:
-            sleep+5
-    if "play" in action:
-        if play < money:
-            play+5
-        if play > money:
-            print("need more money")
-    if "hydrate" in action:
-        if hydrate < money:
-            play+5
-        if hydrate > money:
-            print("need more money")
-    if "clean" in action:
-        if clean < money:
-            play+5
-        if clean > money:
-            print("need more money")
-    if "work" in action:
-        money+35
-    if "feed" in action:
-        if hunger < money:
-            hunger+10
-        if hunger > money:
-            print("need more money")
-    if "sleep" in action:
-        if play < money:
-            play+5
-        if play > money:
-            print("need more money")
-            
+        if ap==2:
+            print("2 actions left")
+        if ap==1:
+            print("1 action left")
+        if ap==3:
+            print("3 actions left")
+        if "sleep" in action:
+            if money < sleep:
+                print( "Need more money")
+            if money > sleep:
+                sleep+5
+        if "play" in action:
+            if play < money:
+                play+5
+            if play > money:
+                print("need more money")
+        if "hydrate" in action:
+            if hydrate < money:
+                play+5
+            if hydrate > money:
+                print("need more money")
+        if "clean" in action:
+            if clean < money:
+                play+5
+            if clean > money:
+                print("need more money")
+        if "work" in action:
+            money+35
+        if "feed" in action:
+            if hunger < money:
+                hunger+10
+            if hunger > money:
+                print("need more money")
+        if "sleep" in action:
+            if play < money:
+                play+5
+            if play > money:
+                print("need more money")
+    
