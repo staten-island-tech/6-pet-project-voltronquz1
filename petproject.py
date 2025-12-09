@@ -40,8 +40,7 @@ class Hero:
         "Work:$0",
         "sleep:$10"
     ]
-    while ap > 0:
-        action=0
+    while ap  > 0:
         ap-1
         ap=3
         options=[
@@ -96,6 +95,7 @@ class Hero:
         if "sleep" in action:
             if play < money:
                 play+5
+                money= money- work
             if play > money:
                 print("need more money")
     
