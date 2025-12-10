@@ -32,17 +32,9 @@ class Hero:
     dirtyness=random.randint(5,10)
     thirstness=random.randint(5,10)
     sleepyness=random.randint(5,10)
-    options=[
-        "Play:$10",
-        "Feed:$10",
-        "Hydrate:$10",
-        "Clean:$10",
-        "Work:$0",
-        "sleep:$10"
-    ]
-    while ap  > 0:
-        ap-1
-        ap=3
+    
+
+    def game():
         options=[
         "Play:$10",
         "Feed:$10",
@@ -59,12 +51,7 @@ class Hero:
         sleep=10
         print(options)
         action=input(":").lower()
-        if ap==2:
-            print("2 actions left")
-        if ap==1:
-            print("1 action left")
-        if ap==3:
-            print("3 actions left")
+        valid=True
         if "sleep" in action:
             if money < sleep:
                 print( "Need more money")
@@ -98,4 +85,7 @@ class Hero:
                 money= money- work
             if play > money:
                 print("need more money")
-    
+        else: 
+            print("Invalid move")
+        if valid:
+            ap-1
