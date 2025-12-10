@@ -18,7 +18,6 @@ class Hero:
         pet.clean =max(0,min(100,pet.clean))
         pet.thirst=max(0,min(100,pet.thirst))
         pet.sleep =max(0,min(100,pet.sleep))
-        
     def person(self,money):
         self.money=money
     money=100
@@ -32,8 +31,6 @@ class Hero:
     dirtyness=random.randint(5,10)
     thirstness=random.randint(5,10)
     sleepyness=random.randint(5,10)
-    
-
     def game():
         options=[
         "Play:$10",
@@ -55,35 +52,35 @@ class Hero:
         if "sleep" in action:
             if money < sleep:
                 print( "Need more money")
-            if money > sleep:
+            else:
                 sleep+5
         if "play" in action:
             if play < money:
                 play+5
-            if play > money:
+            else:
                 print("need more money")
         if "hydrate" in action:
             if hydrate < money:
                 play+5
-            if hydrate > money:
+            else:
                 print("need more money")
         if "clean" in action:
             if clean < money:
                 play+5
-            if clean > money:
+            else:
                 print("need more money")
         if "work" in action:
             money+35
         if "feed" in action:
             if hunger < money:
                 hunger+10
-            if hunger > money:
+            else:
                 print("need more money")
         if "sleep" in action:
             if play < money:
                 play+5
                 money= money- work
-            if play > money:
+            else:
                 print("need more money")
         else: 
             print("Invalid move")
