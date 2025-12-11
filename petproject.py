@@ -23,15 +23,6 @@ class Hero:
         pet.clean =max(0,min(100,pet.clean))
         pet.thirst=max(0,min(100,pet.thirst))
         pet.sleep =max(0,min(100,pet.sleep))
-    def person(self,money):
-        self.money=money
-    money=100
-    hunger=100
-    thirst=100
-    clean=100
-    sleep=100
-    happiness=100
-    ap=3
     happinessloss=random.randint(5,10)
     dirtyness=random.randint(5,10)
     thirstness=random.randint(5,10)
@@ -45,16 +36,18 @@ class Hero:
         "Work:$0",
         "sleep:$10"
     ]
-        print(options)
+        print(options[i])
+
+        
         action=input(":").lower()
         for i in options:
             if "sleep" in action:
-                if self.money < self.sleep:
+                if self.money > self.sleep:
                     print( "Need more money")
                 else:
                     self.sleep+5
             if "play" in action:
-                if self.play < money:
+                if self.play  money:
                     self.play+5
                 else:
                     print("need more money")
