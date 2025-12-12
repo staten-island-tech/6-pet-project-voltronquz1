@@ -1,14 +1,20 @@
 import random
 class Hero:
-    def _init_(self):
-        self.hunger=100
-        self.thirst=100
-        self.clean=100
-        self.sleep=100
-        self.happiness=100
+    def _init_(self,hunger,thirst,clean,sleep,happiness,money,ap):
+        self.hunger=hunger
+        self.thirst=thirst
+        self.clean=clean
+        self.sleep=sleep
+        self.happiness=happiness
         # player money
-        self.money=100
-        self.ap=3
+        self.money=money
+        self.ap=ap
+    hunger=100
+    thirst=100
+    clean=100
+    sleep=100
+    happiness=100
+
     #check if alive
     def alive(pet):
         pet.hunger > 0
@@ -36,6 +42,8 @@ class Hero:
         "Work:$0",
         "sleep:$10"
     ]
+        
+        print("welcome to this ga,e")
         print(options)
         action=input(":").lower()
         for i in options:
@@ -43,20 +51,20 @@ class Hero:
                 if self.money > self.sleep:
                     print( "Need more money")
                 else:
-                    self.sleep+5
+                    self.sleep+=5
             if "play" in action:
                 if self.happiness  > self.money:
-                    self.happiness+5
+                    self.happiness+=5
                 else:
                     print("need more money")
             if "hydrate" in action:
                 if self.thirst < self.money:
-                    self.thirst+5
+                    self.thirst+=5
                 else:
                     print("need more money")
             if "clean" in action:
                 if self.clean < money:
-                    self.play+5
+                    self.play +=5
                 else:
                     print("need more money")
             if "work" in action:
@@ -64,12 +72,12 @@ class Hero:
 
             if "feed" in action:
                 if self.hunger < money:
-                    self.hunger+10
+                    self.hunger+=10
                 else:
                     print("need more money")
             if "sleep" in action:
                 if self.play < money:
-                    self.play+5
+                    self.play+=5
                     money= money- self.work
                 else:
                     print("need more money")
@@ -78,3 +86,7 @@ class Hero:
                 self.ap-=1
                 if self.ap==0:
                     self.ap=3
+
+
+#def _init_(self,hungrIUE,AEGAG,AEF,AGA):
+    SELF.SGGGSD=GRSG
