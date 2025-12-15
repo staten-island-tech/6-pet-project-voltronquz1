@@ -1,5 +1,5 @@
 import random
-class Hero:
+class hero:
     def _init_(self,hunger,thirst,clean,sleep,happiness,money,ap):
         self.hunger=hunger
         self.thirst=thirst
@@ -9,26 +9,28 @@ class Hero:
         # player money
         self.money=money
         self.ap=ap
-    hunger=100
+
+    """ hunger=100
     thirst=100
     clean=100
     sleep=100
-    happiness=100
+    happiness=100 """
+
 
     #check if alive
-    def alive(pet):
-        pet.hunger > 0
-        pet.happiness >0
-        pet.clean > 0
-        pet.thirst > 0
-        pet.sleep > 0
+    def alive(self):
+        self.hunger > 0
+        self.happiness >0
+        self.clean > 0
+        self.thirst > 0
+        self.sleep > 0
     #caps stats
-    def statcap(pet):
-        pet.hunger=max(0,min(10,pet.hunger))
-        pet.happiness=max(0,min(100,pet.happiness))
-        pet.clean =max(0,min(100,pet.clean))
-        pet.thirst=max(0,min(100,pet.thirst))
-        pet.sleep =max(0,min(100,pet.sleep))
+    def statcap(self):
+        self.hunger=max(0,min(10,self.hunger))
+        self.happiness=max(0,min(100,self.happiness))
+        self.clean =max(0,min(100,self.clean))
+        self.thirst=max(0,min(100,self.thirst))
+        self.sleep =max(0,min(100,self.sleep))
     happinessloss=random.randint(5,10)
     dirtyness=random.randint(5,10)
     thirstness=random.randint(5,10)
@@ -42,8 +44,9 @@ class Hero:
         "Work:$0",
         "sleep:$10"
     ]
-        
-        print("welcome to this ga,e")
+        while alive:
+            print(options)
+        print("welcome to this game")
         print(options)
         action=input(":").lower()
         for i in options:
@@ -86,7 +89,4 @@ class Hero:
                 self.ap-=1
                 if self.ap==0:
                     self.ap=3
-
-
-#def _init_(self,hungrIUE,AEGAG,AEF,AGA):
-    SELF.SGGGSD=GRSG
+kauhwreg = hero(100,100,100,100,0,0,15)
