@@ -1,6 +1,6 @@
 import random
 class hero:
-    def _init_(self,hunger,thirst,clean,sleep,happiness,money,ap):
+    def _init_(self,hunger=100,thirst=100,clean=100,sleep=100,happiness=100,money=300,ap=3):
         self.hunger=hunger
         self.thirst=thirst
         self.clean=clean
@@ -9,13 +9,6 @@ class hero:
         # player money
         self.money=money
         self.ap=ap
-
-    """ hunger=100
-    thirst=100
-    clean=100
-    sleep=100
-    happiness=100 """
-
 
     #check if alive
     def alive(self):
@@ -35,20 +28,29 @@ class hero:
     dirtyness=random.randint(5,10)
     thirstness=random.randint(5,10)
     sleepyness=random.randint(5,10)
-    def game(self):
-        options=[
-        "Play:$10",
-        "Feed:$10",
-        "Hydrate:$10",
-        "Clean:$10",
-        "Work:$0",
-        "sleep:$10"
-    ]
-        while alive:
-            print(options)
+    name=input("Give me a name to your pet:  ")
+    
+options=[
+"Play:$10",
+"Feed:$10",
+"Hydrate:$10",
+"Clean:$10",
+"Work:$0",
+"sleep:$10"
+]
+
+
+
+def game():    
+    while True:
+        hero.statcap()
+        hero.alive()
+        print(options)
         print("welcome to this game")
         print(options)
         action=input(":").lower()
+        print(f"Here are your stats:\nHunger:{hero.hunger}\nHappiness:{hero.clean}\nHere your clean:{self.dirtyness}:\nHappiness{self.happiness}\nMoney:{self.money}")
+
         for i in options:
             if "sleep" in action:
                 if self.money > self.sleep:
@@ -89,4 +91,4 @@ class hero:
                 self.ap-=1
                 if self.ap==0:
                     self.ap=3
-kauhwreg = hero(100,100,100,100,0,0,15)
+    # kauhwreg = hero(100,100,100,100,0,0,15)
