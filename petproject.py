@@ -1,6 +1,6 @@
 
 class hero:
-    def __init__(self,hunger,thirst,clean,sleep,happiness,money):
+    def __init__(self,hunger,thirst,clean,sleep,happiness,money,ap,day):
         self.hunger=hunger
         self.thirst=thirst
         self.clean=clean
@@ -8,6 +8,8 @@ class hero:
         self.happiness=happiness
         # player money
         self.money=money
+        self.ap=ap
+        self.day=day
 
 
     #check if alive
@@ -37,14 +39,16 @@ options=[
     "sleep:$10"
 ]
 
-justin = hero(100,100,100,100,100,100)
+justin = hero(100,100,100,100,100,100,3,1)
 name=input("Give me a name for pet: ")
 print("welcome to this game")
-print(options)
-def game():    
+# print(options)
+def game():
     while True:
         print(options)
         action=input(":").lower()
+        
+
         print(f"Here are your stats:\nHunger:{justin.hunger}\nHappiness:{justin.happiness}\nHere your clean:{justin.clean}:\nMoney:{justin.money}")
         if action == "play":
             if 10< justin.money:
@@ -93,13 +97,20 @@ def game():
                     justin.sleep-=5
                 else:
                     print("need more money")
-            if action == "feed":
+            if action == "sleep":
                 justin.sleep+=20
                 justin.money-=10
                 justin.hunger-=10
                 justin.thirst-=10
                 justin.happiness-=10
                 justin.clean-=10
+            if action:
+                justin.ap-=1
+                if justin.ap==0:
+                    justin.day+=1
+                    justin.ap=3
+                    
+
             else: 
                 print("Invalid response")
         justin.statcap()
@@ -108,5 +119,5 @@ def game():
             break
 
 
-
+game()
 
