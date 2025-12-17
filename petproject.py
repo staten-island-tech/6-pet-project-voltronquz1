@@ -39,9 +39,10 @@ options=[
 
 justin = hero(100,100,100,100,100,100)
 name=input("Give me a name for pet: ")
+print("welcome to this game")
+print(options)
 def game():    
     while True:
-        print("welcome to this game")
         print(options)
         action=input(":").lower()
         print(f"Here are your stats:\nHunger:{justin.hunger}\nHappiness:{justin.happiness}\nHere your clean:{justin.clean}:\nMoney:{justin.money}")
